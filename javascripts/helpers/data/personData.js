@@ -130,4 +130,5 @@ const getAlivePersons = () => {
     return persons.filter((x) => x.isDead === false);
 };
 
-export default {getAlivePersons}
+
+export default {getAlivePersons};
