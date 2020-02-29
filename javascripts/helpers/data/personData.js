@@ -142,4 +142,9 @@ const randomMurder = () => {
     persons[deadMan].isDead = true;
 };
 
-export default {getAlivePersons, getDeadPeople, randomMurder};
+const bringToLife = (personId) => {
+    const itLives = persons.findIndex((x) => x.id === personId);
+    persons[itLives].isDead = false;
+};
+
+export default {getAlivePersons, getDeadPeople, randomMurder, bringToLife};
